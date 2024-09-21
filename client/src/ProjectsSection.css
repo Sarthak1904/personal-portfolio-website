@@ -1,0 +1,138 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, sans-serif;
+  background: #fff; /* Set a white background */
+  color: #333;
+}
+
+.project-title {
+  color: #FFA500; /* Example color: blue */
+}
+
+.projects-section-container {
+  max-width: 75%;
+  margin: auto;
+  position: relative;
+  padding: 40px;
+}
+
+.project-card {
+  background: #f9f9f9;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 8px;
+  width: 100%; /* Full width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow around the project */
+}
+
+.tags button {
+  background: #FFF9ED; /* Light grey background */
+  border: none;
+  padding: 10px 15px;
+  margin: 0 10px 20px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #FFA500; /* Orange text color */
+}
+
+.content {
+  display: flex; /* Align side-by-side */
+  justify-content: space-between; /* Space out the brief and approach */
+  margin-top: 20px;
+}
+
+.brief, .approach {
+  width: 48%;
+  line-height: 1.8;
+  font-size: 1.1rem;
+}
+
+.content p {
+  line-height: 1.6; /* Increased line height for better readability */
+  margin-bottom: 15px;
+}
+
+.project-image {
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.button::after {
+  content: '→';
+  margin-left: 5px;
+  font-size: 1.2rem;
+  transform: rotate(45deg);
+  transition: transform 
+  0.3s ease;
+}
+
+.button:hover::after {
+  transform: rotate(0deg);
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav-buttons button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #FFA500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .content div, .brief, .approach {
+    width: 100%;
+  }
+}
+
+#my-projects {
+  text-align: center;
+  color: black; /* Default color for the entire text */
+}
+
+.my-color {
+  color: orange; /* Specific color for the word 'My' */
+}
+

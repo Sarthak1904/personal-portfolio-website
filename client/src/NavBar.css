@@ -1,0 +1,80 @@
+/* NavBar.css */
+.navbar {
+    display: flex;
+    justify-content: center; /* Center everything horizontally */
+    align-items: center;
+    padding: 10px 20px;
+    padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.70); /* Soft, cream color with 75% transparency */
+    backdrop-filter: blur(50px); /* Blur effect */
+    border-radius: 50px; /* Rounded corners for the entire navbar */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+    margin: 30px auto; /* Center the navbar */
+    position: fixed; /* Keep navbar at the top */
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure navbar stays above other elements */
+    width: auto; /* Let the content determine the width */
+  }
+  
+  .logo {
+    font-family: ;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px; /* Space between logo and buttons */
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px; /* Even spacing between navigation links */
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .nav-links li {
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #FFA500; /* Change hover color */
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .navbar {
+      width: auto; /* Hug content even in mobile view */
+      padding: 10px 15px;
+      top: 10px;
+    }
+  
+    .logo {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  
+    .nav-links {
+      gap: 20px; /* Reduce gap between links on mobile */
+    }
+  
+    .nav-links li {
+      font-size: 0.9rem;
+    }
+  }
+  

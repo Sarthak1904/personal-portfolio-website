@@ -1,0 +1,83 @@
+.journey-container {
+    display: flex;
+    justify-content: center; /* Aligns children (intro-section and experience-section) in the center */
+    align-items: flex-start; /* Aligns children at the top */
+    padding: 20px;
+    max-width: 100%;
+    flex-wrap: wrap; /* Allows the sections to wrap on smaller screens */
+}
+
+.intro-section, .experience-section {
+    width: 35%;
+    text-align: left;
+    padding: 20px;    
+    border-radius: 5px;
+}
+
+/* Button styling */
+.resume-button-journey-section {
+    background-color: orange;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/* Experience section styling */
+.experience-section {
+    width: 35%;
+    text-align: left;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.experience {
+    margin-bottom: 30px;
+    background-color: #FFF9ED;  /* Set the background color to light beige */
+    border-radius: 10px;        /* Rounded corners */
+    padding: 20px;              /* Add padding inside the boxes */
+}
+
+.experience h3 {
+    color: #333;
+}
+
+.experience p {
+    color: #666;
+}
+
+.experience ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.experience li {
+    padding-bottom: 5px;
+}
+
+#my-journey {
+    text-align: left;
+    color: black; /* Default color for the entire text */
+}
+
+.my-color {
+    color: orange; /* Specific color for the word 'My' */
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .journey-container {
+        flex-direction: column; /* Stacks the intro and experience sections vertically */
+        align-items: center; /* Center the sections */
+    }
+    
+    .intro-section, .experience-section {
+        width: 90%; /* Full width for smaller screens */
+        padding-left: 20px; /* Reduce padding for better fit */
+        padding-right: 20px; /* Reduce padding for better fit */
+        margin-bottom: 20px; /* Add space between sections */
+    }
+}
