@@ -76,7 +76,7 @@ const App = () => {
 
       <div className="hero-text">
         <ReactTypingEffect
-          text={["👋 Hi, my name is Sarthak."]}
+          text={["Hi, my name is Sarthak."]}
           speed={100}
           eraseDelay={999999999}
           typingDelay={500}
