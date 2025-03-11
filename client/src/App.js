@@ -71,6 +71,7 @@ const App = () => {
           zIndex: '-1',
           top: 0,
           left: 0,
+          filter: 'blur(10px)',
         }}
       />
 
